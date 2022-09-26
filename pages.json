@@ -1,0 +1,114 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom",
+				"app-plus": {
+					"pullToRefresh": {
+						"support": true,
+						"color": "#000",
+						"style": "default",
+						"contentdown": {
+							"caption": "下拉刷新中,耐心等待"
+						},
+						"contentover": {
+							"caption": "释放可刷新自定义文本"
+						},
+						"contentrefresh": {
+							"caption": "正在努力工作中"
+						}
+					}
+				}
+
+			}
+		},
+		{
+			"path": "pages/fen/fen",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+				/* 	"onReachBottomDistance": 30,
+					"backgroundTextStyle": "light" */
+			}
+		},
+		{
+			"path": "pages/wen/wen",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/yue/yue",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		}
+
+		, {
+			"path": "pages/fen/fen",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+
+			}
+
+		},
+		{
+			"path": "pages/souso/souso",
+			"style": {
+				"navigationBarBackgroundColor": "",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	"tabBar": {
+		"color": "#000",
+		"selectedColor": "#166",
+		"backgroundColor": "#999",
+		"fontSize": "20px",
+		"borderStyle": "blick",
+		"iconWidth": "",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/yue/yue",
+				"text": "阅读"
+			},
+			{
+				"pagePath": "pages/fen/fen",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/wen/wen",
+				"text": "问答"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的"
+			}
+		]
+	}
+
+}
