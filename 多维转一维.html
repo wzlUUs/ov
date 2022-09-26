@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 转换为一维数组
+        let array = [1,2,3,[4,56,[4,7,8,9],4,5],55,78,[34,456]]
+
+
+        /**
+         * flat()
+        */
+        let a1 = array.flat(2)
+        let a2 = []
+        for(var i = 0;i < a1.length;i++) {
+            if(a2.indexOf(a1[i]) == -1) {
+                a2.push(a1[i])
+            }
+        }
+        console.log(a2,'flat');
+
+
+
+        /**
+         * join()
+        */
+        function one(arr){
+            let b1 = arr.join(',').split(',');
+            let b2 = b1.map(item=>{
+                return Number(item);
+            });
+            return b2;
+        }
+        console.log(one(array),'join');
+
+
+        /**
+         * concat()
+        */
+        let c1 = [].concat.apply([],array)
+        console.log([].concat.apply([],c1),'concat');
+
+
+        /**
+         * 递归
+        */
+        var d1 = []
+        function toArr(arr) {
+            for(var i = 0; i< arr.length;i++){
+                if(Array.isArray(arr[i])){
+                    toArr(arr[i])
+                }else{
+                    d1.push(arr[i])
+                }
+            }
+            return d1
+        }
+        console.log(toArr(array),'递归');
+        
+
+        /**
+         * toString()
+        */
+        let e1 = array.toString().split(',')
+        let e2 = []
+        for(var i = 0;i < e1.length;i++) {
+            e2.push(Number(e1[i]))
+        }
+        console.log(e2,'toString');
+
+
+
+       
+    </script>
+</body>
+</html>

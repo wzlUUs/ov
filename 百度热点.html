@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .big {
+            width: 350px;
+            height: 500px;
+            border: 1px solid #ccc;
+            margin: auto;
+            margin-top: 50px;
+            box-sizing: border-box;
+            padding: 10px 20px;
+        }
+        .title {
+            font-size: 16px;
+            font-weight: 800;
+        }
+        .context {
+            width: 310px;
+            height: 430px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 10px;
+            padding: 10px 0;
+            box-sizing: border-box;
+            color: white;
+        }
+        .context div:nth-of-type(1),.context div:nth-of-type(5) {
+            background: linear-gradient(rgb(49, 119, 223),rgb(80, 169, 233));
+        }
+        .context div:nth-of-type(2) {
+            grid-area: 1/2/3/span 2;
+            background: linear-gradient(rgb(49, 119, 223),rgb(80, 169, 233));
+        }
+        .context div:nth-of-type(3) {
+            background: linear-gradient(rgb(233, 50, 196),rgb(231, 115, 219));
+        }
+        .context div:nth-of-type(4) {
+            grid-area: auto/auto/auto/span 2;
+            background: linear-gradient(rgb(49, 119, 223),rgb(80, 169, 233));
+        }
+        .context div:nth-of-type(6) {
+            background: linear-gradient(rgb(234, 130, 19),rgb(233, 172, 80));
+        }
+        .context div:nth-of-type(7) {
+            grid-area: auto/auto/auto/span 2;
+            background: linear-gradient(rgb(234, 130, 19),rgb(233, 172, 80));
+        }
+        .context-top {
+            font-size: 14px;
+            font-weight: 800;
+            text-align: right;
+            margin: 10px;
+        }
+        .context-bottom {
+            text-align: center;
+            margin-top: 15px;
+        }
+        ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+        ul li {
+            width: 15px;
+            height: 25px;
+            text-align: center;
+            line-height: 25px;
+            border: 1px solid #ccc;
+            margin: 0 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <span class="title">今日上榜</span>
+        <div class="context">
+            <div>
+                <p class="context-top">实时热点</p>
+                <p class="context-bottom">阿里第一颗芯</p>
+            </div>
+            <div>
+                <p class="context-top">实时热点</p>
+                <p class="context-bottom">阿里第一颗芯</p>
+            </div>
+            <div>
+                <p class="context-top">实时热点</p>
+                <p class="context-bottom">阿里第一颗芯</p>
+            </div>
+            <div>
+                <p class="context-top">实时热点</p>
+                <p class="context-bottom">阿里第一颗芯</p>
+            </div>
+            <div>
+                <p class="context-top">实时热点</p>
+                <p class="context-bottom">阿里第一颗芯</p>
+            </div>
+            <div>
+                <p class="context-top">实时热点</p>
+                <p class="context-bottom">阿里第一颗芯</p>
+            </div>
+            <div>
+                <p class="context-top">实时热点</p>
+                <p class="context-bottom">阿里第一颗芯</p>
+            </div>
+        </div>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+</body>
+</html>
