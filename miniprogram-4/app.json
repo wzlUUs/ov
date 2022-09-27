@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/inde",
+    "pages/logs/log",
+    "pages/miao/miao",
+    "pages/ju/ju",
+    "pages/my/my",
+    "computend/zi/zi",
+    "pages/shang/shang"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+         {
+      "pagePath":  "pages/index/inde",
+      "text": "首页"
+    },
+      {
+      "pagePath":  "pages/logs/log",
+      "text": "我的课"
+    },
+      {
+      "pagePath":  "pages/miao/miao",
+      "text": "喵呜"
+    },
+      {
+      "pagePath":  "pages/ju/ju",
+      "text": "工具"
+    },
+      {
+      "pagePath":  "pages/my/my",
+      "text": "我的"
+    }
+  ]
+  }
+}

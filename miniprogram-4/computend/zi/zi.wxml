@@ -1,0 +1,8 @@
+<!--computend/zi/zi.wxml-->
+<text>computend/zi/zi.wxml</text>
+<navigator
+open-type="navigateBack"
+delta="1"
+>
+返回
+</navigator>

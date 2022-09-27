@@ -1,0 +1,7 @@
+<!--pages/ju/ju.wxml-->
+<view wx:for="{{colorlist}}" wx:key="index"
+class="num-item"
+style="background-color:rgba({{item}}) ;"
+>
+{{item}}
+</view>

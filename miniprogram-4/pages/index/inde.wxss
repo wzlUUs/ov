@@ -1,0 +1,46 @@
+swiper{
+height: 150px;
+}
+swiper image {
+  width: 100%;height: 100%;
+}
+/* 九宫格 布局 */
+.jiuwai{
+  display: flex;
+  flex-wrap: wrap;
+}
+.jiuge{
+  width: 33.33%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column; /* 改变 主轴方向 */
+  align-items:center ;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.jiuge image{
+  width: 60rpx;
+ height: 60rpx;
+}
+.jiuge text{
+  font-size: 24rpx;
+  margin-top: 20rpx;
+}
+/* 图片 区域 */
+.tu{
+  width: 100%;height: 200rpx;
+  background-color: antiquewhite;
+  display: flex;
+justify-content: space-around;
+}
+.tu .yi {
+  border-radius: 20rpx;
+   width: 48%;height: 100%;
+   background-color: aqua;
+}
+.tu .er {
+  border-radius: 20rpx;
+   width: 48%;height: 100%;
+   background-color: aqua;
+}
+

@@ -1,0 +1,6 @@
+<!--pages/my/my.wxml-->
+<text>pages/my/my.wxml</text>
+<view>
+cun的值 {{cun}}
+<button bindtap="add">+1</button>
+</view>

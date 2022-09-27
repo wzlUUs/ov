@@ -1,0 +1,33 @@
+<!--pages/index/inde.wxml-->
+<!-- 列表 区域 -->
+
+<!-- 轮播图 区域 -->
+<swiper indicator-dots circular>
+<swiper-item wx:for="{{lun}}" wx:key="id">
+<image src="{{item.image}}"></image>
+</swiper-item>
+</swiper>
+
+<!-- 九宫格 区域 -->
+<view class="jiuwai">
+ <navigator 
+ url="/pages/shang/shang?id={{item.id}}&title={{item.name}}"
+ class="jiuge" wx:for="{{jiu}}" wx:key="id">
+ <image src="{{item.icon}}"></image>
+ <text>{{item.name}}</text>
+ </navigator>
+</view>
+
+<!-- 图片区域 -->
+<view class="tu">
+<navigator class="yi" 
+url="/computend/zi/zi?name=zs&id=0"
+open-type="navigate"
+>导航到zi</navigator>
+<!-- 编程式导航  在 js 页面 写操作 -->
+<button class="er" bindtap="goto">跳转到喵呜</button>
+
+<!-- <view  ></view>-->
+</view> 
+
+

@@ -1,0 +1,9 @@
+<!--pages/miao/miao.wxml-->
+<text>pages/miao/miao.wxml</text>
+<navigator
+open-type="navigateBack"
+delta="1"
+
+>
+返回
+</navigator>
