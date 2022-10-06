@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    https://juejin.cn/post/6996841019094335519
+</body>
+
+</html>
+
+<script>
+    let s = 'asdasdasd'
+    /* 使用 扩展运算符 ES6*/
+    var un = arr => [...new Set(s)]
+    console.log(un(s));
+    /* indexOf */
+    const cha = (data) => {
+        let a = ''
+        for (i in data) {
+            if (i == data.indexOf(data[i])) {
+                a += data[i]
+            }
+        }
+        return a
+    }
+    console.log(cha(s));
+
+
+
+    /* 数组的 扁平化  普通递归实现 */
+    let a = [1, 2, [3, 2, [3, 3, [5, 5, [6]]], 7], 1]
+    function fa(a) {
+        let re = []
+        for (var i = 0; i < a.length; i++) {
+            //当前元素是一个数组 , 对其进行递归展平
+            if (Array.isArray(a[i])) {
+                //递归展平结果拼接刀 结果数组
+                re = re.concat(fa(a[i]))
+            }
+            /* 否则 直接 加入 数组 */
+            else {
+                re.push(a[i])
+            }
+        }
+        return re
+    }
+    console.log(fa(a));
+
+</script>
